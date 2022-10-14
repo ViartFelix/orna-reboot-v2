@@ -15,7 +15,10 @@ use Illuminate\Support\Facades\DB;
 */
 
 Route::get('/', function () {
+    return view('hey');
+});
+
+Route::get('/test', function () {
     //$yo=DB::table('baguette')->get();
-    $yo="AAAAAAAAAAAAAAAAAAAAAAA";
-    return view('default',['yo'=>$yo]);
+    return view('yo');
 });

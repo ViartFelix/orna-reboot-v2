@@ -7,6 +7,14 @@
         <title>Laravel</title>
     </head>
     <body>
-        {{$yo}}
+         <!-- L'élément HTML d'identifiant "app" -->
+        <div id="app">
+            @yield('yoyoyo')
+        </div>
+
+        <a href="/">home</a>
+        <a href="/test/">test</a>        
+
+        @yield('script')
     </body>
 </html>
