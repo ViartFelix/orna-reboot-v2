@@ -7,14 +7,15 @@
         <title>Laravel</title>
     </head>
     <body>
-         <!-- L'élément HTML d'identifiant "app" -->
+        <nav>
+            <a href="/">home</a>
+            <a href="/baguette">baguette</a>
+        </nav>
+        
         <div id="app">
-            @yield('yoyoyo')
+            @yield('content')
         </div>
-
-        <a href="/">home</a>
-        <a href="/test/">test</a>        
-
+        
         @yield('script')
     </body>
 </html>
