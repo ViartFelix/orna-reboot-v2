@@ -1,0 +1,50 @@
+@import "../vars.scss";
+
+$header-height: 80px;
+
+header.header {
+  //height: $header-height;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  background-color: $colormain-first;
+  z-index: 9999;
+
+  .header_wrapper {
+    margin: 0 20px;
+
+    .header_nav {
+      display: flex;
+      align-items: center;
+
+      a.link-to {
+        padding: 10px 20px;
+        filter: brightness(0.6);
+        transition: all 0.3s ease-in-out;
+
+        :hover {
+          filter: brightness(1);
+        }
+
+        img,svg {
+          height: $header-height;
+          image-rendering: crisp-edges;
+        }
+
+        p.link-name {
+          text-align: center;
+          color: $textcolor;
+          text-decoration: none;
+          font-weight: 700;
+        }
+      }
+    }
+  }
+
+  .current-page {
+    filter: brightness(1);
+    //background-color: #fff;
+    color: $colormain-sec;
+  }
+}

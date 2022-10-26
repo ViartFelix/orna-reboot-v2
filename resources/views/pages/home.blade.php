@@ -1,10 +1,9 @@
 @extends('default')
 
 @section('content')
-  <div>
-  </div>
+  <HomeComponent></HomeComponent>
 @endsection
 
 @section('scripts')
-
+  <script src="{{asset('js/home.js')}}"></script>
 @endsection

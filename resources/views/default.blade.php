@@ -4,18 +4,23 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Laravel</title>
-    </head>
-    <body>
-        <nav>
-            <a href="/">home</a>
-            <a href="/baguette">baguette</a>
-        </nav>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+        @yield('styles')
+        <link rel="stylesheet" href="{{asset('css/common.css')}}">
+        <link rel="stylesheet" href="{{asset('css/header/index.css')}}">
         
+        <!-- font-family: 'Be Vietnam Pro', sans-serif; -->
+        <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"> 
+
+        <title>Orna-reboot V2</title>
+    </head>
+    <body>        
         <div id="app">
             @yield('content')
         </div>
         
-        @yield('script')
+        @yield('scripts')
     </body>
 </html>

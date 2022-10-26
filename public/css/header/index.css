@@ -1,0 +1,39 @@
+/* ----------------------------------- Colors ----------------------------------- */
+/* ---------------------------------- Container ---------------------------------- */
+header.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  background-color: #362e2b;
+  z-index: 9999;
+}
+header.header .header_wrapper {
+  margin: 0 20px;
+}
+header.header .header_wrapper .header_nav {
+  display: flex;
+  align-items: center;
+}
+header.header .header_wrapper .header_nav a.link-to {
+  padding: 10px 20px;
+  filter: brightness(0.6);
+  transition: all 0.3s ease-in-out;
+}
+header.header .header_wrapper .header_nav a.link-to :hover {
+  filter: brightness(1);
+}
+header.header .header_wrapper .header_nav a.link-to img, header.header .header_wrapper .header_nav a.link-to svg {
+  height: 80px;
+  image-rendering: crisp-edges;
+}
+header.header .header_wrapper .header_nav a.link-to p.link-name {
+  text-align: center;
+  color: #e7e7e7;
+  text-decoration: none;
+  font-weight: 700;
+}
+header.header .current-page {
+  filter: brightness(1);
+  color: #202020;
+}
