@@ -17,7 +17,7 @@ class EquipementSeeder extends Seeder
         $all_item = include(database_path('all.php'));
 
         foreach ($all_item as $key => $val_key) {
-            if($val_key["type"]!="Curative" || $val_key["type"]!="Other" || $val_key["type"]!="Item" || $val_key["type"]!="Material" || $val_key["type"]!="TBD") {
+            if($val_key["type"]=="Curative" || $val_key["type"]=="Other" || $val_key["type"]=="Item" || $val_key["type"]=="Material" || $val_key["type"]=="TBD") {} else {
                 DB::table("equipements")->insert([
                     "type"=>$val_key["type"],
                     "name"=>$val_key["name"],
