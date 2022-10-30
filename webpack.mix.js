@@ -4,6 +4,7 @@ mix.webpackConfig({experiments: {topLevelAwait: true}});
 
 mix.js('resources/js/home.js', 'public/js').vue();
 mix.js('resources/js/header.js', 'public/js').vue();
+mix.js('resources/js/equipements.js', 'public/js').vue();
 
 mix.sass("resources/sass/common.scss", "public/css");
 mix.sass("resources/sass/vars.scss", "public/css");

@@ -1,10 +1,10 @@
 @import "../vars.scss";
 
-$header-height: 80px;
+$header-height: 70px;
 
 header.header {
   //height: $header-height;
-  position: fixed;
+  position: sticky;
   top: 0;
   left: 0;
   width: 100vw;
@@ -19,12 +19,13 @@ header.header {
       align-items: center;
 
       a.link-to {
-        padding: 10px 20px;
+        padding: 10px 15px;
         filter: brightness(0.6);
         transition: all 0.3s ease-in-out;
+        text-decoration: none;
 
-        :hover {
-          filter: brightness(1);
+        &:hover {
+          filter: brightness(1) !important;
         }
 
         img,svg {
@@ -43,8 +44,11 @@ header.header {
   }
 
   .current-page {
-    filter: brightness(1);
-    //background-color: #fff;
-    color: $colormain-sec;
+    filter: brightness(1) !important;
+    background-color: #fff !important;
+
+    p.link-name {
+      color: $colormain-sec !important;
+    }
   }
 }

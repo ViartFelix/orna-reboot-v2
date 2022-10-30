@@ -2,6 +2,7 @@
 import axios from "axios";
 import HeaderComponent from "../header/Header.vue";
 
+/*
 let data;
 
 await axios.get("http://localhost:8000/api/equipements").then((r) => {
@@ -10,11 +11,12 @@ await axios.get("http://localhost:8000/api/equipements").then((r) => {
 }).catch((e) => {
   console.error(e);
 });
+*/
 
 export default {
   data() {
     return {
-      data,
+      //data,
     }
   },
   components: {
@@ -27,7 +29,7 @@ export default {
   <HeaderComponent/>
   <div class="container">
     <ul>
-      <li v-for="yo in data">{{yo.name}}</li>
+      <!--<li v-for="yo in data">{{yo.name}}</li>-->
     </ul>
   </div>
 </template>

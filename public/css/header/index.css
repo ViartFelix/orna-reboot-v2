@@ -1,7 +1,13 @@
 /* ----------------------------------- Colors ----------------------------------- */
 /* ---------------------------------- Container ---------------------------------- */
+.container {
+  max-width: 1500px;
+  margin: 0 auto;
+  position: relative;
+}
+
 header.header {
-  position: fixed;
+  position: sticky;
   top: 0;
   left: 0;
   width: 100vw;
@@ -16,15 +22,16 @@ header.header .header_wrapper .header_nav {
   align-items: center;
 }
 header.header .header_wrapper .header_nav a.link-to {
-  padding: 10px 20px;
+  padding: 10px 15px;
   filter: brightness(0.6);
   transition: all 0.3s ease-in-out;
+  text-decoration: none;
 }
-header.header .header_wrapper .header_nav a.link-to :hover {
-  filter: brightness(1);
+header.header .header_wrapper .header_nav a.link-to:hover {
+  filter: brightness(1) !important;
 }
 header.header .header_wrapper .header_nav a.link-to img, header.header .header_wrapper .header_nav a.link-to svg {
-  height: 80px;
+  height: 70px;
   image-rendering: crisp-edges;
 }
 header.header .header_wrapper .header_nav a.link-to p.link-name {
@@ -34,6 +41,9 @@ header.header .header_wrapper .header_nav a.link-to p.link-name {
   font-weight: 700;
 }
 header.header .current-page {
-  filter: brightness(1);
-  color: #202020;
+  filter: brightness(1) !important;
+  background-color: #fff !important;
+}
+header.header .current-page p.link-name {
+  color: #202020 !important;
 }

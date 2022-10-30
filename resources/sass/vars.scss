@@ -10,3 +10,9 @@ $bordercolor: #aaa;
 /* ---------------------------------- Container ---------------------------------- */
 
 $container: 1500px;
+
+.container {
+  max-width: $container;
+  margin: 0 auto;
+  position: relative;
+}

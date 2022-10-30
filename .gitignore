@@ -3,10 +3,10 @@
 /public/storage
 /storage/*.key
 /vendor
-.env
-.env.local
-.env.prod
-.env.backup
+/.env
+/.env.local
+/.env.prod
+/.env.backup
 .phpunit.result.cache
 docker-compose.override.yml
 Homestead.json
@@ -16,3 +16,4 @@ yarn-error.log
 /.idea
 /.vscode
 /database/all.php
+/public/img/assets/header/

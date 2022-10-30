@@ -1,3 +1,20 @@
-* {
-  background-color: red;
+@import "../vars.scss";
+@import "./single_card.scss";
+
+html,body,main {
+  position: relative;
+}
+
+main {
+  background-color: $colormain-sec;
+
+  .container {
+    .card-deck {
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      grid-template-rows: repeat(5,auto);
+      grid-gap: 50px;
+      padding: 50px 0;
+    }
+  }
 }
