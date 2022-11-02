@@ -17728,7 +17728,7 @@ var _hoisted_19 = {
   "class": "link-name"
 };
 var _hoisted_20 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Potions");
-function render(_ctx, _cache, $props, $setup, $data, $options) {
+function render(_ctx, _cache) {
   var _component_mainLogo = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("mainLogo");
   var _component_equipementRandom = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("equipementRandom");
   var _component_bossRandom = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("bossRandom");
@@ -17738,30 +17738,30 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
   var _component_consumablesRandom = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("consumablesRandom");
   var _component_potionsRandom = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("potionsRandom");
   return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("header", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_2, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("nav", _hoisted_3, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
-    "class": (0,vue__WEBPACK_IMPORTED_MODULE_0__.normalizeClass)([$data.state_link === '/' ? 'current-page' : 'inactive-page', "link-to"]),
+    "class": (0,vue__WEBPACK_IMPORTED_MODULE_0__.normalizeClass)([_ctx.state_link === '/' ? 'current-page' : 'inactive-page', "link-to"]),
     href: "/"
   }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", _hoisted_4, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_mainLogo, {
-    state: $data.icon_change
+    state: _ctx.icon_change
   }, null, 8 /* PROPS */, ["state"]), _hoisted_5, _hoisted_6])], 2 /* CLASS */), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
-    "class": (0,vue__WEBPACK_IMPORTED_MODULE_0__.normalizeClass)([$data.state_link === '/equipements' ? 'current-page' : 'inactive-page', "link-to"]),
+    "class": (0,vue__WEBPACK_IMPORTED_MODULE_0__.normalizeClass)([_ctx.state_link === '/equipements' ? 'current-page' : 'inactive-page', "link-to"]),
     href: "/equipements"
   }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", _hoisted_7, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_equipementRandom), _hoisted_8])], 2 /* CLASS */), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
-    "class": (0,vue__WEBPACK_IMPORTED_MODULE_0__.normalizeClass)([$data.state_link === '/bosses' ? 'current-page' : 'inactive-page', "link-to"]),
+    "class": (0,vue__WEBPACK_IMPORTED_MODULE_0__.normalizeClass)([_ctx.state_link === '/bosses' ? 'current-page' : 'inactive-page', "link-to"]),
     href: "/bosses"
   }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", _hoisted_9, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_bossRandom), _hoisted_10])], 2 /* CLASS */), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
-    "class": (0,vue__WEBPACK_IMPORTED_MODULE_0__.normalizeClass)([$data.state_link === '/monsters' ? 'current-page' : 'inactive-page', "link-to"]),
+    "class": (0,vue__WEBPACK_IMPORTED_MODULE_0__.normalizeClass)([_ctx.state_link === '/monsters' ? 'current-page' : 'inactive-page', "link-to"]),
     href: "/monsters"
   }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", _hoisted_11, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_monstersRandom), _hoisted_12])], 2 /* CLASS */), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
-    "class": (0,vue__WEBPACK_IMPORTED_MODULE_0__.normalizeClass)([$data.state_link === '/materials' ? 'current-page' : 'inactive-page', "link-to"]),
+    "class": (0,vue__WEBPACK_IMPORTED_MODULE_0__.normalizeClass)([_ctx.state_link === '/materials' ? 'current-page' : 'inactive-page', "link-to"]),
     href: "/materials"
   }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", _hoisted_13, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_materialsRandom), _hoisted_14])], 2 /* CLASS */), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
-    "class": (0,vue__WEBPACK_IMPORTED_MODULE_0__.normalizeClass)([$data.state_link === '/pets' ? 'current-page' : 'inactive-page', "link-to"]),
+    "class": (0,vue__WEBPACK_IMPORTED_MODULE_0__.normalizeClass)([_ctx.state_link === '/pets' ? 'current-page' : 'inactive-page', "link-to"]),
     href: "/materials"
   }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", _hoisted_15, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_petsRandom), _hoisted_16])], 2 /* CLASS */), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
-    "class": (0,vue__WEBPACK_IMPORTED_MODULE_0__.normalizeClass)([$data.state_link === '/consumables' ? 'current-page' : 'inactive-page', "link-to"]),
+    "class": (0,vue__WEBPACK_IMPORTED_MODULE_0__.normalizeClass)([_ctx.state_link === '/consumables' ? 'current-page' : 'inactive-page', "link-to"]),
     href: "/consumables"
   }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", _hoisted_17, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_consumablesRandom), _hoisted_18])], 2 /* CLASS */), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
-    "class": (0,vue__WEBPACK_IMPORTED_MODULE_0__.normalizeClass)([$data.state_link === '/potions' ? 'current-page' : 'inactive-page', "link-to"]),
+    "class": (0,vue__WEBPACK_IMPORTED_MODULE_0__.normalizeClass)([_ctx.state_link === '/potions' ? 'current-page' : 'inactive-page', "link-to"]),
     href: "/consumables"
   }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", _hoisted_19, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_potionsRandom), _hoisted_20])], 2 /* CLASS */)])])]);
 }

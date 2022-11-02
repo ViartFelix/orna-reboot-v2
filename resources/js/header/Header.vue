@@ -1,4 +1,4 @@
-<script>
+<script lang="js">
 import mainLogo from "./mainLogo.vue";
 import equipementRandom from "./equipementRandom.vue";
 import bossRandom from "./bossRandom.vue";
