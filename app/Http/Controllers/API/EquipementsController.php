@@ -19,14 +19,15 @@ class EquipementsController extends Controller
         if(!$request->query('p')) {
             $equip=Equipement::where("id",">",0)
             ->take(15)
+            ->orderBy('tier')
             ->get();
             return response()->json($equip);
         } else {
             $equip=Equipement::where("id",">",($request->query('p')*15))
             ->take(15)
+            ->orderBy('tier')
             ->get();
             return response()->json($equip);
         }
-        
     }
 }

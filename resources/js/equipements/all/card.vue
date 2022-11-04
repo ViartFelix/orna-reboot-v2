@@ -1,6 +1,8 @@
 <script>
 
 import ElementComponent from "./elementComponent.vue";
+import {Icon} from "@iconify/vue";
+
 
 export default {
   name: "singleCard",
@@ -11,7 +13,8 @@ export default {
     }
   },
   components: {
-    ElementComponent
+    ElementComponent,
+    Icon,
   },
 }
 
@@ -34,11 +37,21 @@ export default {
 
       <div class="icon-infos">
         <div class="icon-container">
-          <img :src="assetMaterial('test')" alt=""/>
+          <img class="icon" :src="assetMaterial('test')" alt=""/>
         </div>
 
+
         <div class="infos-container">
-          (stats): name, emplacements, 
+          <v-tooltip bottom>
+            <template >
+              Tier
+            </template>
+            <p class="tier">{{d.tier}} <Icon icon="ant-design:star-filled"/></p>
+            
+          </v-tooltip>
+          
+          <p class="name">{{d.name}}</p>
+          <p class="emplacements">{{d.emplacements}} <Icon icon="charm:gem"/></p>
         </div>
       </div>
     </div>
