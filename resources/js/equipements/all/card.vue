@@ -3,18 +3,32 @@
 import ElementComponent from "./elementComponent.vue";
 import {Icon} from "@iconify/vue";
 
-
 export default {
   name: "singleCard",
-  props: ['d'],
+  props: {
+    d: Object,
+  },
   methods: {
     assetMaterial(name) {
       return "/img/materials/"+name+".png";
-    }
+    },
+    assetStat(name) {
+      return "/img/assets/equipements/"+name+".png";
+    },
   },
   components: {
     ElementComponent,
     Icon,
+  },
+  data() {
+    return {
+      stats: undefined,
+      stats_name_short: ["atk","mag","mana","crit","dex","def","res","ward","hp","fore"],
+      stats_name: ["Attack","Magic","Mana","Critical rate","Dexterity","Defence","Resistance","Ward","HP","Foresight"]
+    }
+  },
+  created() {
+    this.stats=JSON.parse(this.d.stats)
   },
 }
 
@@ -42,16 +56,28 @@ export default {
 
 
         <div class="infos-container">
-          <v-tooltip bottom>
-            <template >
-              Tier
+          <v-tooltip text="Tier" location="top">
+            <template v-slot:activator="{props}">
+              <p v-bind="props" class="tier">{{d.tier}} <Icon icon="ant-design:star-filled"/></p>
             </template>
-            <p class="tier">{{d.tier}} <Icon icon="ant-design:star-filled"/></p>
-            
           </v-tooltip>
           
           <p class="name">{{d.name}}</p>
-          <p class="emplacements">{{d.emplacements}} <Icon icon="charm:gem"/></p>
+
+          <v-tooltip text="Adornements" location="top">
+            <template v-slot:activator="{props}">
+              <p v-bind="props" class="emplacements">{{d.emplacements}} <Icon icon="charm:gem"/></p>
+            </template>
+          </v-tooltip>
+          
+        </div>
+      </div>
+
+      <div class="stats-container">
+        
+        <div v-for="(s,index) in stats" :class="stats_name_short[index]+'-stat'" class="single-stat">
+          <img class="stat-img" :src="assetStat(stats_name_short[index])">
+          <p class="stat-val">{{s}}</p>
         </div>
       </div>
     </div>

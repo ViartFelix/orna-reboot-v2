@@ -45,6 +45,8 @@ export default {
       default: this.elementColor="#fff";
         break;
     }
+
+    
   },
 }
 

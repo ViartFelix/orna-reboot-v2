@@ -1,5 +1,5 @@
-import { createApp } from "vue"
-
+import { createApp } from "Vue"
 import EquipAllComponent from "./equipements/all/EquipementsAll.vue";
+import vuetify from "./plugins/vuetify"
 
-createApp(EquipAllComponent).mount("#app");
+createApp(EquipAllComponent).use(vuetify).mount('#app')

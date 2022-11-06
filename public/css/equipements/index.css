@@ -87,10 +87,35 @@
   border-left: 2px solid #202020;
   border-right: 2px solid #202020;
 }
+.card .card-container .icon-infos .infos-container p.tier, .card .card-container .icon-infos .infos-container p.emplacements {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
 .card .card-container .icon-infos .infos-container p .iconify {
   color: #202020;
   height: 100%;
   margin-left: 5px;
+}
+.card .card-container .stats-container {
+  margin: 15px 0;
+  display: grid;
+  grid-template: auto/repeat(9, 1fr);
+}
+.card .card-container .stats-container .single-stat {
+  display: grid;
+  justify-content: center;
+}
+.card .card-container .stats-container .single-stat .stat-img {
+  width: 30px;
+  height: 30px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin-bottom: 3px;
+}
+.card .card-container .stats-container .single-stat .stat-val {
+  text-align: center;
+  font-size: 20px;
 }
 
 html, body, main {
