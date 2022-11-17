@@ -20,10 +20,11 @@ class CreateEquipementsTable extends Migration
             $table->text("description");
             $table->tinyInteger("tier");
             $table->tinyInteger("emplacements");
-            $table->string("icon",200);
             $table->string("element");
             $table->boolean("two_hand");
             $table->json("stats");
+            $table->json("equipable_by");
+            $table->string("icon",200);
         });
     }
 

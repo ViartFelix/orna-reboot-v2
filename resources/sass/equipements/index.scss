@@ -15,6 +15,7 @@ main {
       grid-template-rows: repeat(5,auto);
       grid-gap: 50px;
       padding: 50px 0;
+      min-height: 100vh;
     }
   }
 }
